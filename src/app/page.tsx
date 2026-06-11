@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { 
   Users, 
   Music, 
@@ -221,12 +222,16 @@ export default function Home() {
     return (
       <div className="flex flex-col min-h-screen bg-gray-50 px-4 py-8 justify-center">
         {/* App Title Banner */}
-        <div className="text-center mb-8">
-          <span className="text-xs font-bold text-red-600 tracking-wider uppercase bg-red-100 px-2.5 py-1 rounded border border-red-200">
-            Cadence System Portal
-          </span>
-          <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight mt-3">Music School</h1>
-          <p className="text-sm text-gray-500 font-medium mt-1.5">Mobile Portal for Admins & Instructors</p>
+        <div className="flex flex-col items-center text-center mb-8">
+          <Image 
+            src="/lovefirst-logo.jpg" 
+            alt="LoveFirst Church Logo" 
+            width={128}
+            height={128}
+            className="w-32 h-32 object-contain rounded-xl mb-4 border border-gray-200"
+          />
+          <h1 className="text-2xl font-extrabold text-gray-900 tracking-tight">LoveFirst Church</h1>
+          <p className="text-sm text-gray-500 font-medium mt-1">Mobile Portal for Admins & Instructors</p>
         </div>
 
         {/* Login Form */}
@@ -234,7 +239,7 @@ export default function Home() {
           <h2 className="text-base font-bold text-gray-900">Sign In to Your Session</h2>
           
           <div className="flex flex-col gap-1">
-            <label htmlFor="login-email" className="text-xs font-bold text-gray-600 uppercase">School Email</label>
+            <label htmlFor="login-email" className="text-xs font-bold text-gray-600 uppercase">Church Email</label>
             <div className="relative flex items-center">
               <Mail className="absolute left-3 w-4 h-4 text-gray-400" />
               <input
@@ -327,9 +332,18 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       {/* Top Header */}
       <header className="bg-white border-b border-gray-200 sticky top-0 z-20 px-4 py-3 flex items-center justify-between">
-        <div>
-          <span className="text-[10px] font-bold text-red-600 tracking-wider uppercase">Session Profile</span>
-          <h1 className="text-lg font-bold text-gray-900 tracking-tight leading-tight">{currentUser.name}</h1>
+        <div className="flex items-center gap-2.5">
+          <Image 
+            src="/lovefirst-logo.jpg" 
+            alt="LoveFirst Logo" 
+            width={36}
+            height={36}
+            className="w-9 h-9 object-contain rounded-lg border border-gray-150"
+          />
+          <div>
+            <span className="text-[9px] font-bold text-red-650 tracking-wider uppercase block">LoveFirst Church</span>
+            <h1 className="text-sm font-bold text-gray-900 tracking-tight leading-none mt-0.5">{currentUser.name}</h1>
+          </div>
         </div>
         <div className="flex gap-2">
           <button

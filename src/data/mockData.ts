@@ -39,9 +39,9 @@ export interface StudentRating {
 }
 
 export const mockUsers: User[] = [
-  { id: 'u-1', name: 'Sarah Jenkins', email: 'sarah.j@musicschool.com', role: 'instructor' },
-  { id: 'u-2', name: 'Marcus Miller', email: 'marcus.m@musicschool.com', role: 'instructor' },
-  { id: 'u-3', name: 'Alice Smith', email: 'alice.s@musicschool.com', role: 'admin' },
+  { id: 'u-1', name: 'Sarah Jenkins', email: 'sarah.j@lovefirstchurch.com', role: 'instructor' },
+  { id: 'u-2', name: 'Marcus Miller', email: 'marcus.m@lovefirstchurch.com', role: 'instructor' },
+  { id: 'u-3', name: 'Alice Smith', email: 'alice.s@lovefirstchurch.com', role: 'admin' },
 ];
 
 export const mockBands: Band[] = [

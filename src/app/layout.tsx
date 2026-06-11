@@ -2,8 +2,8 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Cadence Music School",
-  description: "Mobile management application for music school instructors and admins.",
+  title: "LoveFirst Church",
+  description: "Mobile management application for LoveFirst Church instructors and admins.",
 };
 
 export const viewport: Viewport = {
