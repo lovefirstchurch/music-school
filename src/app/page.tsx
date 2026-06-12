@@ -721,7 +721,7 @@ export default function Home() {
             <button
               onClick={() => setActiveTab('bands')}
               className={`flex-1 h-full flex flex-col items-center justify-center gap-1 focus:outline-none ${
-                activeTab === 'bands' ? 'text-black' : 'text-gray-400'
+                activeTab === 'bands' ? 'text-red-600' : 'text-gray-400'
               }`}
             >
               <Music className="w-5.5 h-5.5" />
@@ -731,7 +731,7 @@ export default function Home() {
             <button
               onClick={() => setActiveTab('profile')}
               className={`flex-1 h-full flex flex-col items-center justify-center gap-1 focus:outline-none ${
-                activeTab === 'profile' ? 'text-black' : 'text-gray-400'
+                activeTab === 'profile' ? 'text-red-600' : 'text-gray-400'
               }`}
             >
               <UserIcon className="w-5.5 h-5.5" />
@@ -746,7 +746,7 @@ export default function Home() {
             <button
               onClick={() => setActiveTab('dashboard')}
               className={`flex-1 h-full flex flex-col items-center justify-center gap-1 focus:outline-none ${
-                activeTab === 'dashboard' ? 'text-black' : 'text-gray-400'
+                activeTab === 'dashboard' ? 'text-red-600' : 'text-gray-400'
               }`}
             >
               <LayoutDashboard className="w-5.5 h-5.5" />
@@ -756,7 +756,7 @@ export default function Home() {
             <button
               onClick={() => setActiveTab('bands')}
               className={`flex-1 h-full flex flex-col items-center justify-center gap-1 focus:outline-none ${
-                activeTab === 'bands' ? 'text-black' : 'text-gray-400'
+                activeTab === 'bands' ? 'text-red-600' : 'text-gray-400'
               }`}
             >
               <Music className="w-5.5 h-5.5" />
@@ -766,7 +766,7 @@ export default function Home() {
             <button
               onClick={() => setActiveTab('users')}
               className={`flex-1 h-full flex flex-col items-center justify-center gap-1 focus:outline-none ${
-                activeTab === 'users' ? 'text-black' : 'text-gray-400'
+                activeTab === 'users' ? 'text-red-600' : 'text-gray-400'
               }`}
             >
               <Users className="w-5.5 h-5.5" />
@@ -776,7 +776,7 @@ export default function Home() {
             <button
               onClick={() => setActiveTab('profile')}
               className={`flex-1 h-full flex flex-col items-center justify-center gap-1 focus:outline-none ${
-                activeTab === 'profile' ? 'text-black' : 'text-gray-400'
+                activeTab === 'profile' ? 'text-red-600' : 'text-gray-400'
               }`}
             >
               <UserIcon className="w-5.5 h-5.5" />
